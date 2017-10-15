@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" src="default.css" />
+        <link rel="stylesheet" type="text/css" href="">
+        <style type="text/css">
+         * {
+             font-family: sans-serif;
+         }
+         table {
+             table-layout: fixed;
+             border-collapse: collapse;
+             border: thin solid grey;
+         }
+         table th, table td {
+             text-align: center;
+             font-size: large;
+             border: thin solid grey;
+         }
+        </style>
+        <script type="text/javascript" src="tm.js"></script>
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <tr>
+                <th>テープ</th>
+                <td id='tape0'></td>
+                <td id='tape1'></td>
+                <td id='tape2'></td>
+                <td id='tape3'></td>
+                <td id='tape4'></td>
+                <td id='tape5'></td>
+                <td id='tape6'></td>
+                <td id='tape7'></td>
+                <td id='tape8'></td>
+                <td id='tape9'></td>
+                <td id='tape10'></td>
+                <td id='tape11'></td>
+                <td id='tape12'></td>
+                <td id='tape13'></td>
+                <td id='tape14'></td>
+                <td id='tape15'></td>
+                <td id='tape16'></td>
+                <td id='tape17'></td>
+                <td id='tape18'></td>
+            </tr>
+            <tr>
+                <th>ヘッド</th>
+                <td id='head0'></td>
+                <td id='head1'></td>
+                <td id='head2'></td>
+                <td id='head3'></td>
+                <td id='head4'></td>
+                <td id='head5'></td>
+                <td id='head6'></td>
+                <td id='head7'></td>
+                <td id='head8'></td>
+                <td id='head9'></td>
+                <td id='head10'></td>
+                <td id='head11'></td>
+                <td id='head12'></td>
+                <td id='head13'></td>
+                <td id='head14'></td>
+                <td id='head15'></td>
+                <td id='head16'></td>
+                <td id='head17'></td>
+                <td id='head18'></td>
+            </tr>
+        </table>
+        <input type="button" value="NEXT" onclick="OnButtonClick();"/>
+        <h4>チューリングマシン</h4>
+        <input type="button" value="プログラム" onclick="OnProgram();" />
+        <input id="program" type="text" onclick="OnText" value="勢伊伊伊勢伊伊伊勢" />
+        <ul>
+            <li id="naibu">内部状態: </li>
+            <li id="position">位置: </li>
+        </ul>
+        <h4>ルール説明</h4>
+        <ul>
+            <li>連続した<span style="color: red; font-weight: bold;">「伊」</span>が、整数を表す。</li>
+            <li>間の<span style="font-weight: bold;">「勢」</span>は、整数同士の区切りを表す。</li>
+        </ul>
+        <table>
+            <tr><th>状態</th><th><span style="font-weight: bold;">"勢"</span>を読み込んだときの動作</th><th><span style="color: red; font-weight: bold;">"伊"</span>を読み込んだときの動作</th></tr>
+            <tr><td>1</td><td>ヘッドを右へ移動．状態は1へ</td><td>ヘッドを右へ移動．状態は2へ</td></tr>
+            <tr><td>2</td><td><span style="color: red; font-weight: bold;">"伊"</span>を書き込む．状態は3へ</td><td>ヘッドを右へ移動．状態は2へ</td></tr>
+            <tr><td>3</td><td>ヘッドを左へ移動．状態は4へ</td><td>ヘッドを右へ移動．状態は3へ</td></tr>
+            <tr><td>4</td><td>ヘッド停止（停止状態）</td><td><span style="font-weight: bold;">"勢"</span>を書き込む．状態は4へ</td></tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,135 @@
+h1 {
+    font-family:sans-serif;
+    color:#888844;
+    text-align: left;
+    background-color:#FFCCCC;
+    padding:0.5em;
+    margin: auto;
+}
+
+h2 {
+    font-family:sans-serif;
+    background-color: #FFCCCC;
+    text-align:left;
+    margin: 0.1em;
+    padding-left: 0.2em;
+    color: #888844;
+}
+
+
+h3 {
+    font-family:sans-serif;
+    color:#ffffff;
+    background-color:#cccccc;
+    text-align:left;
+    margin:0.3em;
+    padding-left:0.6em;
+}
+
+p { 
+    text-indent:1em;
+    padding-left:1em;
+    margin-bottom:1em;
+    margin-right:2em;
+    line-height:1.5em;
+}
+
+dl {
+    padding-left:1em;
+    margin-bottom:1em;
+    margin-right:2em;
+    line-height:1.5em;
+}
+
+dt {
+    font-family:sans-serif;
+    font-weight:bold
+}
+
+p.footer {
+    text-indent:0em;
+padding:.5em;
+margin:.5em;
+       line-height:1em;
+       border-top: #000 0.1em solid;
+}
+
+ul { 
+    margin-left:1.5em;
+    margin-right:2em;
+    line-height:1.5em;
+}
+
+ol { 
+    margin-left:1.5em;
+    margin-right:2em;
+    line-height:1.5em;
+}
+
+li {
+    margin-bottom:.3em
+}
+
+table { 
+    margin:0em;
+    margin-left:2em;
+    margin-right:2em;
+    margin-bottom:1em;
+    empty-cells:show;
+    border-spacing:0px;
+    border-collapse: collapse;
+}
+
+th { 
+    margin: 0em;
+    border:1px solid #ea7;
+    padding:0.4em;
+    background: #f3c759; 
+    font-family:sans-serif;
+}
+td { 
+margin: 0em;
+color:#000;
+border:1px solid #ea7;
+padding:0.4em;
+background:#f9e3aa;
+           font-size:0.8em;
+           font-family:sans-serif;
+}
+
+.syntax table { 
+margin:0em;
+       margin-left:2em;
+       margin-right:2em;
+       margin-bottom:1em;
+       empty-cells:show;
+       border-spacing:0px;
+       border-collapse: collapse;
+}
+.syntax td { 
+margin: 0em;
+color:#000;
+border:none;
+padding:0.4em;
+background:#fff;
+           font-size:0.8em;
+           font-family:sans-serif;
+}
+
+
+blockquote { 
+    margin-left: 1em;
+    margin-right: 1em;
+    border-left: 0.2em solid #050;
+padding: .5em;
+         text-indent: 0em;
+color: #050;
+}
+
+pre { 
+    margin-left:2em;
+    margin-right:2em;
+    padding:0.5em;
+    color:#fff;
+    background-color:#000;
+}
